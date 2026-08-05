@@ -6,8 +6,8 @@ export function Contacto({ isSubscribed, onSubscribe }) {
 
   return (
     <section className="newsletter" aria-labelledby="contacto-title">
-      <p className="eyebrow">Correspondencia lenta</p>
-      <h2 id="contacto-title">Un poco de calma en tu correo.</h2>
+      <p className="eyebrow">Correspondencia espiritual</p>
+      <h2 id="contacto-title">Recibí las novedades en tu correo.</h2>
       {isSubscribed ? (
         <p className="subscription-message">¡Gracias! Muy pronto vas a recibir novedades.</p>
       ) : (
