@@ -2,7 +2,7 @@ main { overflow: hidden; }
 
 .site-header { align-items: center; display: flex; justify-content: space-between; margin: 0 auto; max-width: 1280px; padding: 24px 5vw; }
 .brand { align-items: center; color: #173f37; display: inline-flex; font-family: 'DM Mono', monospace; font-size: .78rem; font-weight: 700; gap: 8px; letter-spacing: .16em; text-decoration: none; }
-.brand-mark { color: #9b5cc6; font-size: 1rem; }
+.brand-mark { color: #26992c; font-size: 2rem; }
 .navigation { display: flex; gap: 30px; }
 .navigation a, .navigation button { background: none; border: 0; color: #365a4f; cursor: pointer; font: inherit; font-size: .84rem; padding: 4px; text-decoration: none; }
 .navigation a:hover, .navigation button:hover { color: #8b4cb5; }

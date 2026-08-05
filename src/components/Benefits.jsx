@@ -5,9 +5,5 @@ const benefits = [
 ]
 
 export function Benefits({ items = benefits }) {
-  return (
-    <section className="benefits" aria-label="Beneficios de Naturalian">
-      {items.map((item) => <article className="benefit" key={item.title}><span>{item.symbol}</span><h2>{item.title}</h2><p>{item.text}</p></article>)}
-    </section>
-  )
+  return <section className="benefits" aria-label="Beneficios de Naturalian">{items.map((item) => <article className="benefit" key={item.title}><span>{item.symbol}</span><h2>{item.title}</h2><p>{item.text}</p></article>)}</section>
 }

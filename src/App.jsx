@@ -1,16 +1,9 @@
 import { useState } from 'react'
-import { About } from './components/about/About'
-import { Benefits } from './components/benefits/Benefits'
-import { Categories } from './components/categories/Categories'
-import { Hero } from './components/hero/Hero'
-import { Instagram } from './components/instagram/Instagram'
 import { Container } from './components/layout/Container'
 import { Footer } from './components/layout/Footer'
 import { Navbar } from './components/layout/Navbar'
-import { Newsletter } from './components/newsletter/Newsletter'
-import { ProductGrid } from './components/products/ProductGrid'
-import { Ritual } from './components/ritual/Ritual'
-import { categories } from './data/categories'
+import { Home } from './pages/home'
+import { Productos } from './pages/productos'
 import { products } from './data/products'
 import './App.css'
 
@@ -19,10 +12,7 @@ function App() {
   const [cart, setCart] = useState([])
   const [menuOpen, setMenuOpen] = useState(false)
   const [isSubscribed, setIsSubscribed] = useState(false)
-
-  const visibleProducts = activeCategory === 'Todos'
-    ? products
-    : products.filter((product) => product.category === activeCategory)
+  const [currentPage, setCurrentPage] = useState('home')
 
   const heroImage = products.find((product) => product.id === 7)?.image
   const ritualImage = products.find((product) => product.id === 13)?.image
@@ -33,8 +23,14 @@ function App() {
   }
 
   function scrollToCatalog() {
-    document.querySelector('#catalogo')?.scrollIntoView({ behavior: 'smooth' })
+    setCurrentPage('productos')
     closeMenu()
+  }
+
+  function goHome(sectionId = 'inicio') {
+    setCurrentPage('home')
+    closeMenu()
+    window.setTimeout(() => document.querySelector(`#${sectionId}`)?.scrollIntoView({ behavior: 'smooth' }), 0)
   }
 
   function addToCart(product) {
@@ -52,31 +48,27 @@ function App() {
         isMenuOpen={menuOpen}
         onMenuToggle={() => setMenuOpen((isOpen) => !isOpen)}
         onNavigate={closeMenu}
-        onShopClick={scrollToCatalog}
+        onHomeClick={() => goHome()}
+        onProductsClick={scrollToCatalog}
+        onAboutClick={() => goHome('nosotros')}
       />
 
-      <Hero image={heroImage} onCtaClick={scrollToCatalog} />
-      <Benefits />
-      <About />
-
-      <section className="catalog" id="catalogo">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">Selección Natural</p>
-            <h2>Para tu ritual diario</h2>
-          </div>
-          <Categories
-            categories={categories}
-            selectedCategory={activeCategory}
-            onSelectCategory={setActiveCategory}
-          />
-        </div>
-        <ProductGrid products={visibleProducts} onAddToCart={addToCart} />
-      </section>
-
-      <Ritual image={ritualImage} />
-      <Instagram images={instagramImages} />
-      <Newsletter isSubscribed={isSubscribed} onSubscribe={subscribe} />
+      {currentPage === 'home' ? (
+        <Home
+          heroImage={heroImage}
+          ritualImage={ritualImage}
+          instagramImages={instagramImages}
+          isSubscribed={isSubscribed}
+          onProductsClick={scrollToCatalog}
+          onSubscribe={subscribe}
+        />
+      ) : (
+        <Productos
+          activeCategory={activeCategory}
+          onAddToCart={addToCart}
+          onSelectCategory={setActiveCategory}
+        />
+      )}
       <Footer onNavigate={closeMenu} />
     </Container>
   )
