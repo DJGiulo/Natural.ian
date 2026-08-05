@@ -1,0 +1,15 @@
+:root {
+  --color-green-900: #173f37;
+  --color-green-700: #2d6857;
+  --color-green-100: #e5f1ea;
+  --color-green-50: #f3faf5;
+  --color-white: #ffffff;
+  --color-violet: #8351b4;
+  --color-pink: #d96e9a;
+  --color-text: #45675b;
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-detail: 'DM Mono', monospace;
+  --content-width: 1180px;
+  --section-space: clamp(4.5rem, 9vw, 8.5rem);
+}
