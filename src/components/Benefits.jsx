@@ -1,7 +1,7 @@
 const benefits = [
   { symbol: '✦', title: 'Elegido con intención', text: 'Productos seleccionados para acompañar tus momentos de calma.' },
-  { symbol: '⌂', title: 'Para cada rincón', text: 'Detalles que transforman tu casa en un espacio más propio.' },
-  { symbol: '♡', title: 'Atención cercana', text: 'Escribinos y te ayudamos a encontrar el objeto indicado.' },
+  { symbol: '⌂', title: 'Calidad y dedicación', text: 'Elegimos cada pieza con cuidado, buscando que sume belleza, armonía y calidez a tus espacios.' },
+  { symbol: '♡', title: 'Atención personalizada y cercana', text: 'Escribinos y te ayudamos a encontrar el objeto indicado para vos.' },
 ]
 
 export function Benefits({ items = benefits }) {
