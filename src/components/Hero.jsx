@@ -1,3 +1,14 @@
-export function Hero({ image, onCtaClick }) {
-  return <section className="hero" id="inicio"><div className="hero-copy"><p className="eyebrow">Objetos para habitar despacio</p><h1>Pequeños rituales,<br /><em>grandes pausas.</em></h1><p className="hero-text">Sahumerios, budas y objetos elegidos para transformar tus espacios cotidianos en un refugio.</p><button className="button button-dark" type="button" onClick={onCtaClick}>Explorar la tienda <span>→</span></button></div><div className="hero-art" role="img" aria-label="Figuras de budas y Ganesha" style={{ backgroundImage: `url(${image})` }}><p className="hero-note">Respirá<br />lo simple</p></div></section>
+import { Categories } from './Categories'
+
+export function Hero({ image, categories, onCategoryClick }) {
+  return (
+    <section className="hero-forest relative isolate d-flex align-items-center justify-content-center min-h-[34rem] text-white" id="inicio" style={{ backgroundImage: `url(${image})` }}>
+      <div className="hero-overlay" aria-hidden="true" />
+      <div className="hero-content container position-relative z-1 px-4 py-5 text-center">
+        <p className="hero-brand mb-4">Natural.IAN</p>
+        <p className="lead fw-semibold mb-4">Tu bienestar, nuestra pasión</p>
+        <Categories categories={categories} className="hero-categories justify-content-center" onCategoryClick={onCategoryClick} />
+      </div>
+    </section>
+  )
 }

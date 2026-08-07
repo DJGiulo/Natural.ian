@@ -5,16 +5,16 @@ import { Navbar } from './components/layout/Navbar'
 import { Home } from './pages/home'
 import { Productos } from './pages/productos'
 import { products } from './data/products'
+import { categoryId } from './utils/categoryId'
 import './App.css'
 
 function App() {
-  const [activeCategory, setActiveCategory] = useState('Todos')
   const [cart, setCart] = useState([])
   const [menuOpen, setMenuOpen] = useState(false)
   const [isSubscribed, setIsSubscribed] = useState(false)
   const [currentPage, setCurrentPage] = useState('home')
 
-  const heroImage = products.find((product) => product.id === 7)?.image
+  const heroImage = 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2200&q=85'
   const ritualImage = products.find((product) => product.id === 13)?.image
   const instagramImages = products.slice(0, 4)
 
@@ -22,9 +22,11 @@ function App() {
     setMenuOpen(false)
   }
 
-  function scrollToCatalog() {
+  function scrollToCatalog(category) {
     setCurrentPage('productos')
     closeMenu()
+    const targetId = category ? categoryId(category) : 'catalogo'
+    window.setTimeout(() => document.querySelector(`#${targetId}`)?.scrollIntoView({ behavior: 'smooth' }), 0)
   }
 
   function goHome(sectionId = 'inicio') {
@@ -59,14 +61,12 @@ function App() {
           ritualImage={ritualImage}
           instagramImages={instagramImages}
           isSubscribed={isSubscribed}
-          onProductsClick={scrollToCatalog}
+          onCategoryClick={scrollToCatalog}
           onSubscribe={subscribe}
         />
       ) : (
         <Productos
-          activeCategory={activeCategory}
           onAddToCart={addToCart}
-          onSelectCategory={setActiveCategory}
         />
       )}
       <Footer onNavigate={closeMenu} />

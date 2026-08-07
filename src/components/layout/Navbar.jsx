@@ -1,6 +1,6 @@
 export function Navbar({ isMenuOpen, onMenuToggle, onNavigate, onHomeClick, onProductsClick, onAboutClick }) {
   return (
-    <header className="site-header">
+    <header className="site-header sticky-top">
       <a className="brand" href="#inicio" aria-label="Naturalian, ir al inicio" onClick={onNavigate}>
         <span className="brand-mark">NATURAL.IAN.</span>
       </a>

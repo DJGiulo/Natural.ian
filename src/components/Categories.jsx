@@ -1,3 +1,7 @@
-export function Categories({ categories, selectedCategory, onSelectCategory }) {
-  return <div className="filters" aria-label="Filtrar productos">{categories.map((category) => <button className={selectedCategory === category ? 'active' : ''} key={category} type="button" onClick={() => onSelectCategory(category)}>{category}</button>)}</div>
+export function Categories({ categories, className = '', onCategoryClick }) {
+  return (
+    <div className={`filters ${className}`.trim()} aria-label="Ir a una categoría de productos">
+      {categories.map((category) => <button key={category} type="button" onClick={() => onCategoryClick(category)}>{category}</button>)}
+    </div>
+  )
 }
