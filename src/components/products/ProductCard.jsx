@@ -1,7 +1,7 @@
 export function ProductCard({ product, onAddToCart }) {
   return (
     <article className="product-card">
-      <div className="product-image">
+      <div className={`product-image ${product.category.startsWith('Atrapa') ? 'product-image--dreamcatcher' : ''}`}>
         <img src={product.image} alt={product.name} />
         {product.tag && <span className="tag">{product.tag}</span>}
         <button type="button" onClick={() => onAddToCart(product)} aria-label={`Agregar ${product.name} a la bolsa`}>+</button>
