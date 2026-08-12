@@ -71,7 +71,7 @@ export const products = [
 { id: 16, name: 'Sahumerios TRIPLE EMPASTE', category: 'Sahumerios', price: 'Consultar', tag: 'Destacado', image: tripleEmpaste },
 { id: 16, name: 'Sahumerios Planetas', category: 'Sahumerios', price: 'Consultar', tag: '', image: sahumeriosPlanetas },
 { id: 16, name: 'Palo Santo', category: 'Sahumerios', price: 'Consultar', tag: '', image: paloSanto1 },
-{ id: 16, name: '???', category: 'Sahumerios', price: '$1.300 c/u', tag: 'Oferta', image: oferta },
+{ id: 16, name: 'Sahumerios ULLAS INDIA', category: 'Sahumerios', price: '$1.300 c/u', tag: 'Oferta', image: oferta },
 { id: 17, name: 'Mini Tibetanos', category: 'Sahumerios', price: 'Consultar', tag: '', image: miniTibetanos },
 { id: 17, name: 'Tibetanos Slim', category: 'Sahumerios', price: 'Consultar', tag: '', image: tibetanoSlim },
 { id: 17, name: 'Palo Santo Mini', category: 'Sahumerios', price: 'Consultar', tag: '', image: paloSantoMini },
