@@ -10,9 +10,9 @@ export function Home({ heroImage, ritualImage, instagramImages, isSubscribed, on
     return (
         <>
         <Hero image={heroImage} categories={categories.filter((category) => category !== 'Todos')} onCategoryClick={onCategoryClick} />
-        <Benefits />
+        <Benefits /> 
         <About />
-        <Ritual image={ritualImage} />
+        {/*<Ritual image={ritualImage} />*/}
         <Instagram images={instagramImages} />
         <Contacto isSubscribed={isSubscribed} onSubscribe={onSubscribe} />
         </>

@@ -5,5 +5,15 @@ const benefits = [
 ]
 
 export function Benefits({ items = benefits }) {
-  return <section className="benefits" aria-label="Beneficios de Naturalian">{items.map((item) => <article className="benefit" key={item.title}><span>{item.symbol}</span><h2>{item.title}</h2><p>{item.text}</p></article>)}</section>
+  return (
+    <section className="benefits" aria-labelledby="beneficios-title">
+      <div className="benefits-content">
+        <p className="eyebrow">Natural.IAN</p>
+        <h2 className="benefits-title" id="beneficios-title">Beneficios</h2>
+        <div className="benefits-grid">
+          {items.map((item) => <article className="benefit" key={item.title}><span>{item.symbol}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}
+        </div>
+      </div>
+    </section>
+  )
 }
