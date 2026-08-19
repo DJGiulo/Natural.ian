@@ -64,18 +64,18 @@ import velasRosas from '../assets/products/VelasRosas.jpeg'
 export const products = [
 //sahumerios y palo santo
 { id: 1, name: '30 Varillas', category: 'Sahumerios', price: '$2.000', tag: 'Oferta', image: varillas30 },
-{ id: 2, name: 'Sahumerios Buena onda', category: 'Sahumerios', price: 'Consultar', tag: '', image: buenaOnda },
+{ id: 2, name: 'Sahumerios Buena onda', category: 'Sahumerios', price: '$1.800 c/u', tag: '', image: buenaOnda },
 { id: 3, name: 'Tibetanos Grandes', category: 'Sahumerios', price: '$4.000 c/u', tag: '', image: tibetanosGrandes },
 { id: 4, name: 'Sahumerios HEM', category: 'Sahumerios', price: '$1.400 c/u', tag: '', image: sahumeriosHem },
 { id: 5, name: 'Sahumerios saborizados', category: 'Sahumerios', price: 'Sahumerio + Posta sahumerio - $2.000 Solo - $1.200', tag: 'Promo', image: sahumeriosSaborizados },
-{ id: 6, name: 'Sahumerios TRIPLE EMPASTE', category: 'Sahumerios', price: 'Consultar', tag: 'Destacado', image: tripleEmpaste },
-{ id: 7, name: 'Sahumerios Planetas', category: 'Sahumerios', price: 'Consultar', tag: '', image: sahumeriosPlanetas },
-{ id: 8, name: 'Palo Santo', category: 'Sahumerios', price: 'Consultar', tag: '', image: paloSanto1 },
+{ id: 6, name: 'Sahumerios TRIPLE EMPASTE', category: 'Sahumerios', price: '$2.500', tag: 'Destacado', image: tripleEmpaste },
+{ id: 7, name: 'Sahumerios Planetas', category: 'Sahumerios', price: '$1.700', tag: '', image: sahumeriosPlanetas },
+{ id: 8, name: 'Palo Santo', category: 'Sahumerios', price: '$1.800', tag: '', image: paloSanto1 },
 { id: 9, name: 'Sahumerios ULLAS INDIA', category: 'Sahumerios', price: '$1.300 c/u', tag: 'Oferta', image: oferta },
-{ id: 10, name: 'Mini Tibetanos', category: 'Sahumerios', price: 'Consultar', tag: '', image: miniTibetanos },
-{ id: 11, name: 'Tibetanos Slim', category: 'Sahumerios', price: 'Consultar', tag: '', image: tibetanoSlim },
-{ id: 12, name: 'Palo Santo Mini', category: 'Sahumerios', price: 'Consultar', tag: '', image: paloSantoMini },
-{ id: 13, name: 'Palo Santo', category: 'Sahumerios', price: 'Consultar', tag: '', image: paloSantoDos },
+{ id: 10, name: 'Mini Tibetanos', category: 'Sahumerios', price: '$2.000', tag: '', image: miniTibetanos },
+{ id: 11, name: 'Tibetanos Slim', category: 'Sahumerios', price: '$2.300', tag: '', image: tibetanoSlim },
+{ id: 12, name: 'Palo Santo Mini', category: 'Sahumerios', price: '$1.800', tag: '', image: paloSantoMini },
+{ id: 13, name: 'Palo Santo', category: 'Sahumerios', price: '$3.200', tag: '', image: paloSantoDos },
 
 //budas
   { id: 14, name: 'Buda cascada de agua', category: 'Budas', price: '$60.000', tag: 'Disponible', image: budaGordo },
@@ -93,33 +93,33 @@ export const products = [
   { id: 26, name: 'Buda mediano', category: 'Budas', price: '$35.000', tag: '', image: budaMediano },
 
 //atrapasueños
-{ id: 27, name: 'Ojo Turco', category: 'Atrapasueños', price: 'Consultar', tag: '', image: atrapasuenosTurco },
-{ id: 28, name: 'Negro', category: 'Atrapasueños', price: 'Consultar', tag: '', image: atrapasuenosNegro },
-{ id: 29, name: 'Amarillo', category: 'Atrapasueños', price: 'Consultar', tag: '', image: atrapasuenosAmarillo },
-{ id: 30, name: 'Azul', category: 'Atrapasueños', price: 'Consultar', tag: '', image: atrapasuenosAzul },
-{ id: 31, name: 'Rosa', category: 'Atrapasueños', price: 'Consultar', tag: '', image: atrapasuenosRosa },
-{ id: 32, name: 'Blanco', category: 'Atrapasueños', price: 'Consultar', tag: '', image: atrapasuenosBlanco },
-{ id: 33, name: 'Rojo', category: 'Atrapasueños', price: 'Consultar', tag: '', image: atrapasuenosRojo },
-{ id: 34, name: 'Verde', category: 'Atrapasueños', price: 'Consultar', tag: '', image: atrapasuenosVerde },
-{ id: 35, name: 'Siete chacras', category: 'Atrapasueños', price: 'Consultar', tag: '', image: atrapasuenos7Chacras },
+{ id: 27, name: 'Ojo Turco', category: 'Atrapasueños', price: '$8.300', tag: 'Destacado', image: atrapasuenosTurco },
+{ id: 28, name: 'Negro', category: 'Atrapasueños', price: '$7.000', tag: '', image: atrapasuenosNegro },
+{ id: 29, name: 'Amarillo', category: 'Atrapasueños', price: '$7.000', tag: '', image: atrapasuenosAmarillo },
+{ id: 30, name: 'Azul', category: 'Atrapasueños', price: '$7.000', tag: '', image: atrapasuenosAzul },
+{ id: 31, name: 'Rosa', category: 'Atrapasueños', price: '$7.000', tag: '', image: atrapasuenosRosa },
+{ id: 32, name: 'Blanco', category: 'Atrapasueños', price: '$7.000', tag: '', image: atrapasuenosBlanco },
+{ id: 33, name: 'Rojo', category: 'Atrapasueños', price: '$7.000', tag: '', image: atrapasuenosRojo },
+{ id: 34, name: 'Verde', category: 'Atrapasueños', price: '$7.000', tag: '', image: atrapasuenosVerde },
+{ id: 35, name: 'Siete chacras', category: 'Atrapasueños', price: '$11.000', tag: '', image: atrapasuenos7Chacras },
 
 //cannabis
   { id: 36, name: 'Cannabis', category: 'Cannabis', price: '$3.000 c/u', tag: '', image: Cannabis },
 
   //difusores y esencias
-  { id: 37, name: 'Difusores para auto', category: 'Esencias/difusores', price: 'Consultar', tag: '', image: difusorAuto },
-  { id: 38, name: 'Difusores', category: 'Esencias/difusores', price: 'Consultar', tag: '', image: difusores },
-  { id: 39, name: 'Aromatizantes de ambiente', category: 'Esencias/difusores', price: 'Consultar', tag: '', image: aromatizantes },
+  { id: 37, name: 'Difusores para auto', category: 'Esencias/difusores', price: '$5.000', tag: '', image: difusorAuto },
+  { id: 38, name: 'Difusores', category: 'Esencias/difusores', price: '$3.700 c/u', tag: '', image: difusores },
+  { id: 39, name: 'Aromatizantes de ambiente', category: 'Esencias/difusores', price: '$4.000', tag: '', image: aromatizantes },
 
   //velas aromáticas
-  { id: 40, name: 'Velas Violetas', category: 'Velas aromáticas', price: '$15.000', tag: '', image: velasVioletas },
-  { id: 41, name: 'Velas Blancas', category: 'Velas aromáticas', price: '$15.000', tag: '', image: velasBlancas },
-  { id: 42, name: 'Velas Rosas', category: 'Velas aromáticas', price: '$15.000', tag: '', image: velasRosas },
+  { id: 40, name: 'Velas Violetas', category: 'Velas aromáticas', price: '$2.500', tag: '', image: velasVioletas },
+  { id: 41, name: 'Velas Blancas', category: 'Velas aromáticas', price: '$2.500', tag: '', image: velasBlancas },
+  { id: 42, name: 'Velas Rosas', category: 'Velas aromáticas', price: '$2.500', tag: '', image: velasRosas },
 
   //conos cascada
-  { id: 43, name: 'Conos Iluminarte', category: 'Conos cascada', price: 'Consultar', tag: '', image: conosCascada1 },
-  { id: 44, name: 'Conos XL Bangladesh', category: 'Conos cascada', price: 'Consultar', tag: '', image: conosCascada2 },
+  { id: 43, name: 'Conos Iluminarte', category: 'Conos cascada', price: '$1.500', tag: '', image: conosCascada1 },
+  { id: 44, name: 'Conos XL Bangladesh', category: 'Conos cascada', price: '$1.500', tag: '', image: conosCascada2 },
   
 //tapiz
-  { id: 45, name: 'Tapiz', category: 'Tapices', price: 'Consultar', tag: '', image: tapiz },
+  { id: 45, name: 'Tapiz', category: 'Tapices', price: '$15.000', tag: '', image: tapiz },
 ]
