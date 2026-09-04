@@ -6,7 +6,7 @@ import { categoryId } from '../utils/categoryId'
 
 const productCategories = categories.filter((category) => category !== 'Todos')
 
-export function Productos({ onAddToCart }) {
+export function Productos({ onBuy }) {
     function scrollToCategory(category) {
         document.querySelector(`#${categoryId(category)}`)?.scrollIntoView({ behavior: 'smooth' })
     }
@@ -20,7 +20,7 @@ export function Productos({ onAddToCart }) {
         {productCategories.map((category) => (
             <section className="product-category" id={categoryId(category)} key={category}>
                 <div className="product-category-heading"><p className="eyebrow">Categoría</p><h2>{category}</h2></div>
-                <ProductGrid products={products.filter((product) => product.category === category)} onAddToCart={onAddToCart} />
+                <ProductGrid products={products.filter((product) => product.category === category)} onBuy={onBuy} />
             </section>
         ))}
         </section>

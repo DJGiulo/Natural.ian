@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Container } from './components/layout/Container'
+import { BuyModal } from './components/BuyModal'
 import { Footer } from './components/layout/Footer'
 import { Navbar } from './components/layout/Navbar'
 import { Home } from './pages/home'
@@ -9,7 +10,7 @@ import { categoryId } from './utils/categoryId'
 import './App.css'
 
 function App() {
-  const [cart, setCart] = useState([])
+  const [selectedProduct, setSelectedProduct] = useState(null)
   const [menuOpen, setMenuOpen] = useState(false)
   const [isSubscribed, setIsSubscribed] = useState(false)
   const [currentPage, setCurrentPage] = useState('home')
@@ -35,10 +36,6 @@ function App() {
     window.setTimeout(() => document.querySelector(`#${sectionId}`)?.scrollIntoView({ behavior: 'smooth' }), 0)
   }
 
-  function addToCart(product) {
-    setCart((currentCart) => [...currentCart, product])
-  }
-
   function subscribe() {
     setIsSubscribed(true)
   }
@@ -46,7 +43,6 @@ function App() {
   return (
     <Container as="main">
       <Navbar
-        cartCount={cart.length}
         isMenuOpen={menuOpen}
         onMenuToggle={() => setMenuOpen((isOpen) => !isOpen)}
         onNavigate={closeMenu}
@@ -66,10 +62,11 @@ function App() {
         />
       ) : (
         <Productos
-          onAddToCart={addToCart}
+          onBuy={setSelectedProduct}
         />
       )}
       <Footer onNavigate={closeMenu} />
+      <BuyModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
     </Container>
   )
 }

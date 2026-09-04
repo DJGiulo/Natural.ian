@@ -63,7 +63,7 @@ import velasRosas from '../assets/products/VelasRosas.jpeg'
 
 export const products = [
 //sahumerios y palo santo
-{ id: 1, name: '30 Varillas', category: 'Sahumerios', price: '$2.000', tag: 'Oferta', image: varillas30 },
+{ id: 1, name: '30 Varillas', category: 'Sahumerios', price: '$2.200', tag: 'Oferta', image: varillas30 },
 { id: 2, name: 'Sahumerios Buena onda', category: 'Sahumerios', price: '$1.800 c/u', tag: '', image: buenaOnda },
 { id: 3, name: 'Tibetanos Grandes', category: 'Sahumerios', price: '$4.000 c/u', tag: '', image: tibetanosGrandes },
 { id: 4, name: 'Sahumerios HEM', category: 'Sahumerios', price: '$1.400 c/u', tag: '', image: sahumeriosHem },
