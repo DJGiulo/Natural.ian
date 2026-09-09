@@ -13,7 +13,7 @@ export function Productos({ onBuy }) {
 
     return (
         <section className="catalog" id="catalogo">
-        <div className="section-heading">
+        <div className="section-heading catalog-banner">
             <div><p className="eyebrow">Selección Natural</p><h1>Nuestro catálogo</h1></div>
             <Categories categories={productCategories} onCategoryClick={scrollToCategory} />
         </div>

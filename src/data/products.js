@@ -1,3 +1,10 @@
+//Imágenes biyutería holística
+import dijes from '../assets/products/dijesHolisticos.jpeg'
+import pulseras from '../assets/products/pulseras1.jpeg'
+import biyu1 from '../assets/products/biyuteria1.jpeg'
+import biyu2 from '../assets/products/biyutería2.jpeg'
+
+
 //imagenes sahumerios y palo santo
 import varillas30 from '../assets/products/30varillasOferta$2.000.jpeg'
 import buenaOnda from '../assets/products/SahumeriosBuenaOnda.jpeg'
@@ -62,7 +69,14 @@ import velasRosas from '../assets/products/VelasRosas.jpeg'
 //------------------------------------------------------------------------
 
 export const products = [
-//sahumerios y palo santo
+//Biyutería holística
+{ id: 46, name: 'Dijes holísticos', category: 'Biyutería holística', price: '$1.000 c/u', tag: 'Nuevo', image: dijes },
+{ id: 47, name: 'Pulseras', category: 'Biyutería holística', price: 'A consultar', tag: 'Nuevo', image: pulseras },
+{ id: 48, name: 'Collares', category: 'Biyutería holística', price: 'A consultar', tag: 'Nuevo', image: biyu1 },
+{ id: 49, name: 'Biyutería', category: 'Biyutería holística', price: 'A consultar', tag: 'Nuevo', image: biyu2 },
+
+
+  //sahumerios y palo santo
 { id: 1, name: '30 Varillas', category: 'Sahumerios', price: '$2.200', tag: 'Oferta', image: varillas30 },
 { id: 2, name: 'Sahumerios Buena onda', category: 'Sahumerios', price: '$1.800 c/u', tag: '', image: buenaOnda },
 { id: 3, name: 'Tibetanos Grandes', category: 'Sahumerios', price: '$4.000 c/u', tag: '', image: tibetanosGrandes },

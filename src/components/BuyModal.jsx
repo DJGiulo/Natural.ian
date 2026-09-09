@@ -3,7 +3,7 @@ const WHATSAPP_NUMBER = '5491123391943'
 export function BuyModal({ product, onClose }) {
   if (!product) return null
 
-  const message = `Hola Andre, quiero consultar por este producto:\n\n*${product.name}*\nCategoría: ${product.category}\nPrecio: ${product.price}`
+  const message = `Hola, quiero consultar por este producto:\n\n*${product.name}*\nCategoría: ${product.category}\nPrecio: ${product.price}`
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
 
   return (
