@@ -13,16 +13,20 @@ export function Productos({ onBuy }) {
 
     return (
         <section className="catalog" id="catalogo">
-        <div className="section-heading catalog-banner">
-            <div><p className="eyebrow">Selección Natural</p><h1>Nuestro catálogo</h1></div>
-            <Categories categories={productCategories} onCategoryClick={scrollToCategory} />
-        </div>
-        {productCategories.map((category) => (
-            <section className="product-category" id={categoryId(category)} key={category}>
+          <div className="catalog-banner">
+            <div className="section-heading catalog-banner-content">
+              <div><p className="eyebrow">Selección Natural</p><h1>Nuestro catálogo</h1></div>
+              <Categories categories={productCategories} onCategoryClick={scrollToCategory} />
+            </div>
+          </div>
+          <div className="catalog-content">
+            {productCategories.map((category) => (
+              <section className="product-category" id={categoryId(category)} key={category}>
                 <div className="product-category-heading"><p className="eyebrow">Categoría</p><h2>{category}</h2></div>
                 <ProductGrid products={products.filter((product) => product.category === category)} onBuy={onBuy} />
-            </section>
-        ))}
+              </section>
+            ))}
+          </div>
         </section>
     )
 }
