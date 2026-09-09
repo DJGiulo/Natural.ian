@@ -1,8 +1,8 @@
-//Imágenes biyutería holística
+//Imágenes bisutería holística
 import dijes from '../assets/products/dijesHolisticos.jpeg'
 import pulseras from '../assets/products/pulseras1.jpeg'
-import biyu1 from '../assets/products/biyuteria1.jpeg'
-import biyu2 from '../assets/products/biyutería2.jpeg'
+import bisu1 from '../assets/products/biyuteria1.jpeg'
+import bisu2 from '../assets/products/biyutería2.jpeg'
 
 
 //imagenes sahumerios y palo santo
@@ -69,11 +69,11 @@ import velasRosas from '../assets/products/VelasRosas.jpeg'
 //------------------------------------------------------------------------
 
 export const products = [
-//Biyutería holística
-{ id: 46, name: 'Dijes holísticos', category: 'Biyutería holística', price: '$1.000 c/u', tag: 'Nuevo', image: dijes },
-{ id: 47, name: 'Pulseras', category: 'Biyutería holística', price: 'A consultar', tag: 'Nuevo', image: pulseras },
-{ id: 48, name: 'Collares', category: 'Biyutería holística', price: 'A consultar', tag: 'Nuevo', image: biyu1 },
-{ id: 49, name: 'Biyutería', category: 'Biyutería holística', price: 'A consultar', tag: 'Nuevo', image: biyu2 },
+//Bisutería holística
+{ id: 46, name: 'Dijes holísticos', category: 'Bisutería holística', price: '$1.000 c/u', tag: 'Nuevo', image: dijes },
+{ id: 47, name: 'Pulseras', category: 'Bisutería holística', price: 'A consultar', tag: 'Nuevo', image: pulseras },
+{ id: 48, name: 'Collares', category: 'Bisutería holística', price: 'A consultar', tag: 'Nuevo', image: bisu1 },
+{ id: 49, name: 'Bisutería', category: 'Bisutería holística', price: 'A consultar', tag: 'Nuevo', image: bisu2 },
 
 
   //sahumerios y palo santo
