@@ -3,7 +3,7 @@
 
 Navbar
   .site-header: barra superior sticky de Navbar.
-  .brand / .brand-mark: nombre y símbolo visual de Navbar.
+  .brand / .brand-logo: nombre y logo visual de Navbar.
   .navigation / .navigation.open: enlaces y estado abierto del menú de Navbar.
   .menu-button: control del menú móvil de Navbar.
 
@@ -37,7 +37,7 @@ main { overflow: visible; width: 100%; }
 
 .site-header { align-items: center; background: #fff; display: flex; justify-content: space-between; margin: 0 auto; max-width: none; padding: 18px 5vw; position: sticky; top: 0; z-index: 1030; box-shadow: 0 2px 14px #173f3714; }
 .brand { align-items: center; color: #173f37; display: inline-flex; font-family: 'DM Mono', monospace; font-size: .78rem; font-weight: 700; gap: 8px; letter-spacing: .16em; text-decoration: none; }
-.brand-mark { color: #26992c; font-size: 2rem; }
+.brand-logo { display: block; height: 45px; object-fit: cover; object-position: center; width: 220px; }
 .navigation { display: flex; gap: 30px; }
 .navigation a, .navigation button { background: none; border: 0; color: #365a4f; cursor: pointer; font: inherit; font-size: .84rem; padding: 4px; text-decoration: none; }
 .navigation a:hover, .navigation button:hover { color: #8b4cb5; }
