@@ -62,9 +62,13 @@ import aromatizantes from '../assets/products/aromatizantesDeAmbientes.jpeg'
 import tapiz from '../assets/products/Tapiz1.jpeg'
 
 //imagenes velas aromáticas
-import velasVioletas from '../assets/products/VelasVioletas.jpeg'
-import velasBlancas from '../assets/products/VelasBlancas.jpeg'
-import velasRosas from '../assets/products/VelasRosas.jpeg'
+import velasVioletas from '../assets/products/velasVioleta.jpeg'
+import velasBlancas from '../assets/products/velasBlanca.jpeg'
+import velasRosas from '../assets/products/velasRosa.jpeg'
+import arcangel from '../assets/products/velasArcangeles.jpeg'
+import aromatica from '../assets/products/velaAromáticaPack.jpeg'
+import soja from '../assets/products/velasSojaNeutra.jpeg'
+import algarrobo from '../assets/products/velasAlgarrobo.jpeg'
 
 //------------------------------------------------------------------------
 
@@ -129,6 +133,10 @@ export const products = [
   { id: 40, name: 'Velas Violetas', category: 'Velas aromáticas', price: '$2.500', tag: '', image: velasVioletas },
   { id: 41, name: 'Velas Blancas', category: 'Velas aromáticas', price: '$2.500', tag: '', image: velasBlancas },
   { id: 42, name: 'Velas Rosas', category: 'Velas aromáticas', price: '$2.500', tag: '', image: velasRosas },
+  { id: 50, name: 'Velas Arcangel', category: 'Velas aromáticas', price: '$7.000', tag: '', image: arcangel },
+  { id: 51, name: 'Velas Aromáticas', category: 'Velas aromáticas', price: '$2.500 c/u', tag: 'Nuevo', image: aromatica },
+  { id: 52, name: 'Velas Soja Neutra', category: 'Velas aromáticas', price: '$2.000', tag: 'Nuevo', image: soja },
+  { id: 53, name: 'Velas Algarrobo', category: 'Velas aromáticas', price: '$4.500 c/u', tag: 'Nuevo', image: algarrobo },
 
   //conos cascada
   { id: 43, name: 'Conos Iluminarte', category: 'Conos cascada', price: '$1.500', tag: '', image: conosCascada1 },
